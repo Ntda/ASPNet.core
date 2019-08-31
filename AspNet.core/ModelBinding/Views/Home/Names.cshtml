@@ -1,0 +1,31 @@
+﻿@model string[]
+@{
+    ViewData["Title"] = "Names";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (Model.Length == 0)
+{
+    <form asp-action="Names" method="post">
+        @for (int i = 0; i < 3; i++)
+        {
+            <div class="form-group">
+                <label>Name @(i++)</label>
+                <input name="names" class="form-control" />
+            </div>
+        }
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+}
+else
+{
+    <table class="table table-sm table-bordered table-striped">
+        @foreach (string name in Model)
+        {
+            <tr><th>Name:</th><td>@name</td></tr>
+        }
+    </table>
+    <a asp-action="Names" class="btn btn-primary">Back</a>
+}
+
+

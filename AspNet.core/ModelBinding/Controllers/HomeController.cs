@@ -15,7 +15,11 @@ namespace ModelBinding.Controllers
             _logger = logger;
             repository = repo;
         }
-        public ViewResult Index(int id) => View(repository[id]);
+        public ViewResult Index([FromQuery]int id)
+        {
+            _logger.Log(LogLevel.Information, "Id: [{0}]", id);
+            return View(repository[id]);
+        }
 
         public ViewResult Create() => View();
 
