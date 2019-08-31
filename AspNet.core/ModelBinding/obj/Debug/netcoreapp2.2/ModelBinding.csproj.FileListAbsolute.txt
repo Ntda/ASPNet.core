@@ -24,3 +24,4 @@ E:\Net core\ASPNet.core.git\AspNet.core\ModelBinding\obj\Debug\netcoreapp2.2\Mod
 E:\Net core\ASPNet.core.git\AspNet.core\ModelBinding\obj\Debug\netcoreapp2.2\ModelBinding.csproj.CopyComplete
 E:\Net core\ASPNet.core.git\AspNet.core\ModelBinding\obj\Debug\netcoreapp2.2\ModelBinding.csprojAssemblyReference.cache
 E:\Net core\ASPNet.core.git\AspNet.core\ModelBinding\obj\Debug\netcoreapp2.2\Razor\Views\Home\Create.g.cshtml.cs
+E:\Net core\ASPNet.core.git\AspNet.core\ModelBinding\obj\Debug\netcoreapp2.2\Razor\Views\Home\Names.g.cshtml.cs

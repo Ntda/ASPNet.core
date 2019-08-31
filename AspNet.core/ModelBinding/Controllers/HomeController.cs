@@ -21,5 +21,14 @@ namespace ModelBinding.Controllers
 
         [HttpPost]
         public ViewResult Create(Person person) => View("Index", person);
+
+        public ViewResult Names(string[] names)
+        {
+            foreach (var name in names)
+            {
+                _logger.LogInformation("Names: [{0}]", name);
+            }
+            return View(names ?? new string[0]);
+        }
     }
 }
