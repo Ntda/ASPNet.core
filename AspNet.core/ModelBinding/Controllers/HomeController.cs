@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using ModelBinding.Models;
 using static ModelBinding.Models.Repository;
 
 namespace ModelBinding.Controllers
@@ -15,5 +16,10 @@ namespace ModelBinding.Controllers
             repository = repo;
         }
         public ViewResult Index(int id) => View(repository[id]);
+
+        public ViewResult Create() => View();
+
+        [HttpPost]
+        public ViewResult Create(Person person) => View("Index", person);
     }
 }
